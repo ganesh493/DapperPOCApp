@@ -1,0 +1,63 @@
+﻿.main-header {
+    background-color: #D82B2A;
+}
+
+.dv-header {
+    padding: 3px 0px 7px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.spn-dev {
+    background-color: white;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: small;
+    color: #D82B2A;
+}
+
+.dv-text-white {
+    color: white;
+}
+
+.spn-count {
+    background-color: white;
+    color: #D82B2A;
+    border-radius: 10px;
+}
+
+.nav-menu {
+    background-color: darkslateblue;
+    /*padding: 0 !important;*/
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width:990px) {
+    .nav-menu {
+        padding: 0 !important;
+    }
+/*    .dv-text-trade{
+        text-align: right;
+    }*/
+}
+
+.nav-menu div ul {
+    margin: auto;
+}
+
+.dv-text-trade {
+    color: #F6D600;
+    font-family: 'Times New Roman';
+}
+
+.dv-text-trade span {
+    font-size: 23px;
+}
+.dr-down{
+    margin-left: -5px;
+}

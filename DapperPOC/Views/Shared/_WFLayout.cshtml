@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DapperPOC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/wellsfargo.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/all.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="row dv-header">
+            <div class="col-lg-2 col-md-4 col-sm-4">
+                <img src="~/images/wells-fargo.png" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4"></div>
+            <div class="col-lg-2 col-md-4 col-sm-4 dv-text-trade">TRADE FAIL REPORTING</div>
+            <div class="col-lg-1 col-md-4 col-sm-4"><span class="spn-dev">DEV</span></div>
+            <div class="col-lg-1 col-md-4 col-sm-4 dv-text-white">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-caret-down dr-down"></i>
+                <span class="spn-count">6</span>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 dv-text-white "><span> Welcome <u>Katkuru, Bramara</u><i class="fas fa-caret-down"></i><i class="fas fa-user-circle"></i></span></div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link"><i class="far fa-chart-bar"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="far fa-comment"></i> Failed Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fas fa-search-plus"></i> Sales View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="far fa-eye"></i> Open Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fas fa-book"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fas fa-briefcase"></i> Admin <i class="fas fa-caret-down"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/wellsfargo.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
