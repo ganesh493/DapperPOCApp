@@ -1,5 +1,6 @@
 ﻿.main-header {
     background-color: #D82B2A;
+    padding-left: 5px;
 }
 
 .dv-header {
@@ -37,13 +38,13 @@
     cursor: pointer;
 }
 
-@media (min-width:990px) {
+@media (min-width:992px) {
     .nav-menu {
         padding: 0 !important;
     }
-/*    .dv-text-trade{
+    .dv-text-trade{
         text-align: right;
-    }*/
+    }
 }
 
 .nav-menu div ul {
@@ -60,4 +61,15 @@
 }
 .dr-down{
     margin-left: -5px;
+}
+
+@media (max-width:767px) {
+    @media (min-width:576px) {
+        .dv-welcome-text {
+            text-align: center !important;
+        }
+        .dv-text-trade {
+            text-align: center !important;
+        }
+    }
 }
