@@ -1,10 +1,11 @@
 ﻿.main-header {
-    background-color: #D82B2A;
+    background-color: #dd2c2b;
     padding-left: 5px;
+    border-bottom: 2px solid #fcc60a;
 }
 
 .dv-header {
-    padding: 3px 0px 7px 0px;
+    padding: 0px;
     display: flex;
     align-items: center;
 }
@@ -28,12 +29,12 @@
 }
 
 .nav-menu {
-    background-color: darkslateblue;
+    background-color: #3d3e42;
     /*padding: 0 !important;*/
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover, .user-details {
     color: white;
     cursor: pointer;
 }
@@ -41,19 +42,26 @@
 @media (min-width:992px) {
     .nav-menu {
         padding: 0 !important;
+        height: 32px;
     }
-    .dv-text-trade{
+
+   /* .dv-text-trade{
         text-align: right;
-    }
+    }*/
 }
 
-.nav-menu div ul {
+/*.nav-menu div ul {
     margin: auto;
+}*/
+
+.nav-menu div ul li {
+    margin-right: 1.1rem;
 }
 
 .dv-text-trade {
     color: #F6D600;
     font-family: 'Times New Roman';
+    line-height:2.6rem;
 }
 
 .dv-text-trade span {
@@ -63,13 +71,25 @@
     margin-left: -5px;
 }
 
-@media (max-width:767px) {
-    @media (min-width:576px) {
+@media (min-width:767px) {
+    .dv-welcome-text, .dv-count-icon {
+        text-align: center !important;
+    }
+/*    @media (min-width:576px) {
         .dv-welcome-text {
             text-align: center !important;
         }
         .dv-text-trade {
             text-align: center !important;
         }
-    }
+    }*/
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #d6d7d0;
 }

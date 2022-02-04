@@ -12,19 +12,31 @@
 <body>
 
     <header class="main-header">
-        <div class="row dv-header">
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <img src="~/images/wells-fargo.png" />
+        <div class="row m-0 dv-header">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                        <img src="~/images/wells-fargo-2.png" />
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 "><strong><span class="dv-text-trade">TRADE FAIL REPORTING</span></strong>&nbsp;&nbsp;<span class="spn-dev">DEV</span></div>
+                </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-3"></div>
-            <div class="col-lg-3 col-md-4 col-sm-5 dv-text-trade">TRADE FAIL REPORTING</div>
-            <div class="col-lg-1 col-md-4 col-sm-4"><span class="spn-dev">DEV</span></div>
-            <div class="col-lg-1 col-md-4 col-sm-3 dv-text-white">
+            <div class="col-lg-4 col-md-1"></div>
+            <div class="col-lg-1 col-md-2 col-sm-3 dv-text-white dv-count-icon">
                 <i class="fas fa-bell"></i>
                 <i class="fas fa-caret-down dr-down"></i>
                 <span class="spn-count">6</span>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-5 dv-text-white dv-welcome-text"><span> Welcome <u>Katkuru, Bramara</u><i class="fas fa-caret-down"></i><i class="fas fa-user-circle"></i></span></div>
+            <div class="col-lg-3 col-md-4 col-sm-5 dv-text-white dv-welcome-text">
+                <a id="navbarDropdown" class="user-details" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span> Welcome <u>Katkuru, Bramara</u>&nbsp;<i class="fas fa-caret-down"></i></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Preferences</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -61,6 +73,12 @@
             @RenderBody()
         </main>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Last Login: <span id="datetime"></span> |</span>
+            <span class="text-muted">Version 1.0</span>
+        </div>
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
